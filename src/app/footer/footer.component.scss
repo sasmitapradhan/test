@@ -1,0 +1,40 @@
+#footer {
+    
+    .footer-margin {
+      margin-top:30px;
+      .footer-logo {
+        padding-left: 0;
+        margin-top: 3%;
+      }
+      img {
+        line-height: 40px;
+        display: inline-block;
+        width: 242px;
+      }
+      .footer-content {
+        margin-top: 50px;
+      }
+    
+    }
+}
+@media(max-width:992px) {
+  .footer-margin {
+    margin-top:20px !important; 
+    img {
+      padding-bottom: 30px; 
+    }
+    .footer-content {
+      
+        margin-top: 0px !important;
+      
+      .navigation-links {
+        img {
+          width:160px;
+        }
+      }
+     
+    }
+  }
+
+ 
+}

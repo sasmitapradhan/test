@@ -1,0 +1,91 @@
+<header class="main_header_area transparent_menu">
+  <div class="header_top_area">
+    <div class="container-fluid">
+        <div class="pull-left">
+            <a>Welcome To GreenHance</a>
+            <a routerLink="/contact-us">How to Find Us</a>
+            <a routerLink="/Feedback">Give Feedback</a>
+        </div>
+        <div class="pull-right">
+            <ul class="header_social">
+                <li><a href="https://www.facebook.com/Greenhance-277524359714440/?modal=admin_todo_tour" target="_blank"><i class="fa fa-facebook"></i></a></li>
+                <li><a href="https://twitter.com/Greenhance1" target="_blank"><i class="fa fa-twitter"></i></a></li>
+                <li><a href="#"><i class="fa fa-instagram"></i></a></li>
+                <li><a href="https://www.linkedin.com/in/greenhance-solutions-186a7b16a/" target="_blank"><i class="fa fa-linkedin"></i></a></li>
+            </ul>
+        </div>
+    </div>
+</div>
+<div class="main_menu_area">
+  <div class="container-fluid">
+      <nav class="navbar navbar-default">
+          <!-- Brand and toggle get grouped for better mobile display -->
+          <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="slide-collapse" data-target="#sidebar" aria-expanded="false">
+              <span class="sr-only">Toggle navigation</span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              </button>
+              <a class="navbar-brand brand-centered" href="#"><img src="../../assets/img/main-logo.png" alt=""></a>
+          </div>
+
+          <!-- Collect the nav links, forms, and other content for toggling -->
+          <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+              <ul class="nav navbar-nav navbar-right">
+                  <li routerLinkActive="active">
+                      <a  routerLink="/home" (click)="setTitle('GreenHance-home')">Home</a>
+                    
+                  </li>
+                  <li routerLinkActive="active" >
+                      <a routerLink="/About" (click)="setTitle('GreenHance-about')">About</a>
+                     
+                  </li>
+                  <!-- <li routerLinkActive="active" [routerLinkActiveOptions]="{exact:
+                    true}"><a routerLink="/principle" (click)="setTitle('GreenHance-principle')">Operating Principle</a></li> -->
+                  <li routerLinkActive="active"><a routerLink="/view-products"(click)="setTitle('GreenHance-products')">Products</a></li>
+                  <li routerLinkActive="active"><a routerLink="/principle" (click)="setTitle('GreenHance-services')">Services</a></li>
+                  <!-- <li routerLinkActive="active"><a href="#features" (click)="setTitle('GreenHance-feautures')">Features</a></li> -->
+                  <li routerLinkActive="active"><a href="#clients" (click)="setTitle('GreenHance-clients')">Clients</a></li>
+                  <li routerLinkActive="active"><a routerLink="/contact-us"(click)="setTitle('GreenHance-contact')">Contact</a></li>
+                 
+              </ul>
+          </div><!-- /.navbar-collapse -->
+
+         
+      </nav>
+  </div>
+</div>
+
+
+</header>
+
+
+<div class="mobile-nav-wrapper visible-xs visible-sm">
+    <nav id="sidebar">
+        <ul class="list-unstyled components">
+            <li class="text-center">
+                <img id="dismiss" src="../../assets/img/nav_close.svg" class="mobile-nav-close">
+                 <a href="#" class="mobile-nav-logo"></a> -->
+                <a></a>
+            </li>
+
+            <li>
+              <a href="#" class="close-nav">Home</a>
+            </li>
+
+            <li>
+                <a routerLink="/About" class="close-nav">About</a>
+               
+            </li>
+            <li><a routerLink="/principle" class="close-nav">Operating Principle</a></li>
+            <li><a routerLink="/view-products" class="close-nav">Products</a></li>
+            <li><a href="#" class="close-nav">Services</a></li>
+            <!-- <li><a href="#features" class="close-nav">Features</a></li> -->
+            <li><a href="#clients" class="close-nav">Clients</a></li>
+            <li><a routerLink="/contact-us" class="close-nav">Contact</a></li>
+        </ul>
+    </nav>
+</div>
+<div id="myNav" class="overlay">
+</div>

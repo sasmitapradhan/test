@@ -1,0 +1,47 @@
+
+.waste-compost {
+    padding-top:60px;
+    padding-bottom: 30px;
+    border-bottom: 1px solid grey;
+    h3 {
+        padding-bottom: 60px;
+    }
+    .useimages {
+        width: 112px;
+        height: 112px;
+        float: left;
+        text-align: center;
+        margin: 30px 24px 40px 0px;
+        span {
+            font-weight: bold;
+        }
+        
+        .greenborder {
+                border: 3px solid #36C304;
+                border-radius: 12px;
+        }
+        .redborder {
+            border: 3px solid #F10000;
+            border-radius: 12px;
+        }
+        
+        .img-thumbnail {
+            display: inline-block;
+            max-width: 100%;
+            min-height: 112px;
+            padding: 0px !important;
+            line-height: 1.42857143;
+            background-color: #fff;
+            -webkit-transition: all .2s ease-in-out;
+            -o-transition: all .2s ease-in-out;
+            transition: all .2s ease-in-out;
+        }
+    }
+}
+@media(max-width:992px) {
+    .waste-compost { 
+        .useimages {
+            margin-left: 25px !important;
+        }
+    }
+}

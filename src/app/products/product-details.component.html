@@ -1,0 +1,67 @@
+
+
+<section *ngIf="selectedProduct" id={{selectedProduct.productId}} class="model-description">
+   
+  <div class="container-fluid">
+      <button (click)="goBack()" class="go-back">>></button>
+   <div class="row">
+     <div class="col-lg-10">
+    <h1 *ngIf="selectedProduct"> MODEL:{{selectedProduct.name}}</h1>
+     </div>
+   </div>
+   <div  class="row product-details">
+    <div class="col-lg-12">
+     <div class="col-lg-3 col-md-3 col-sm-12 col-xl-12 col-name-desc img_pos">
+       <img src="../../assets/img/product_img.png" alt=".."><br>
+       <!-- <img src="../../assets/img/product_img1.png" alt=".."> -->
+     </div>
+     <div class="col-lg-4 col-md-5 col-sm-12 col-xl-12 col-name-desc">
+      <div class="tableheading">
+        TECHNICAL SPECIFICATION</div>
+        <table class="table table-bordered">
+          <tbody>
+            <tr>
+              <td>CAPACITY: 50 kgs per day</td>
+              <td>DIMENSION: L 6.0 x W 2.5 x H 4.3 ft</td>
+            </tr>
+            <tr>
+              <td>OPERATION: FULLY AUTOMATIC</td>
+              <td>CONTROL SYSTEM: PLC</td>
+            </tr>
+            <tr>
+              <td>HEATING METHOD: Flexible Thermo Jocket</td>
+              <td>GEAR BOX (ROSSI): Planetary Type - Torque 850Nm (ITALY)</td>
+            </tr>
+            <tr>
+              <td>POWER RATING: 3ph, 5kw</td>
+              <td>BODY MAKE: SS 304 GRADE</td>
+            </tr>
+            <tr>
+              <td>DECOMPOSING METHOD: Aerobic composting</td>
+              <td>POWER CONSUMPTION: 0.5kw/h</td>
+            </tr>
+            <tr>
+              <td colspan="2">ELECTRICAL SYSTEMS SUPPORTED: 3Phase, 400-415 V, 50/60 Hz</td>
+            </tr>
+          </tbody>
+        </table>
+      
+    </div>
+    <div class="col-lg-4 col-md-4 col-sm-12 col-xl-12 col-name-desc">
+      <div class="tableheading" style="margin-left: 38px;">SPECIAL FEATURES</div>
+      <ul class="lineheightul">
+        <li>High grade stainless steel</li>
+        <li>Ultra durable twin blades</li>
+        <li>Built-in de-odouriser membrane</li>
+        <li>Water and shock proof heater</li>
+        <li>Automatic compost extraction</li>
+        <li>Humid controlled auto process termination</li>
+        <li>Maintenance free high torque planetary gear box</li>
+        <li>Process notifier through tower light</li>
+        <li><span itemprop="desc">Automatic Organic Waste composting machine</span></li>
+      </ul>
+    </div>
+    </div>
+   </div>
+  </div>
+</section>

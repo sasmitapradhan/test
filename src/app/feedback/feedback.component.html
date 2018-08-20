@@ -1,0 +1,28 @@
+<div style="text-align:center">
+  <h1 class="well">
+    Send Us Your Feedback!!
+  </h1>
+	<div class="container">
+	<div class="col-md-6">
+   <img src="../../assets/img/FEEDBACK.png">
+	</div>
+	<div class="col-md-6">
+			<div class="form-area"> 
+				<form role="form">
+					<br style="clear:both">
+					<h3 style="margin-bottom: 25px; text-align: center;">Your opinion is importance to us. This way we can keep improving our website</h3>
+					<div class="form-group">
+								<label>Your overall satisfaction of this page</label> <br>
+								<star-rating [starType]="'svg'" [rating]="2.63"></star-rating>
+					</div>
+				
+					<div class="form-group">
+						<label>Would You like to add a comment</label>
+									<textarea class="form-control" type="textarea" id="message" name="message" placeholder=""   maxlength="140" rows="7"></textarea>              
+					</div>
+					<button type="button" id="submit" name="submit" class="button_sliding_bg" (click)="save('','','','','')">Submit</button>
+				</form>
+			</div>
+		</div>
+	</div>
+</div>

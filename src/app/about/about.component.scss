@@ -1,0 +1,53 @@
+#about {
+    background: url(../../assets/img/texturas.jpg) no-repeat;
+    background-size: cover;
+}
+
+.about-section {
+    
+    .title {
+        position: absolute;
+        text-align: center;
+        left:40%;
+        z-index: 1;
+        padding-bottom: 30px;
+    }
+    .about-content {
+        padding:40px;
+        padding-top:100px;
+        .about-image {
+            img {
+                display: block;
+                max-width: 100%;
+                height: auto;
+            }
+        }
+    }
+    padding:30px;
+    border-top: 1px solid lightgray;
+    .hightlight-text {
+        color: #41a873;
+        font-weight: 600;
+    }
+    .factors {
+        p {
+            padding-top:10px;
+        }
+    }
+}
+@media(max-width:992px) {
+    .about-section {
+        padding: 25px;
+        .title {
+            left: 29%;
+            padding-top: 21px;
+        }
+        .about-content {
+            padding:0px;
+            .about-image {
+                padding-bottom: 50px;
+                padding-top:100px;
+            }
+        }
+    }
+}
