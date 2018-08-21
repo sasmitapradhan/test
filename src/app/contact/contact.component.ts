@@ -2,6 +2,8 @@ import { Component, OnInit } from '@angular/core';
 import {Hero} from '../hero';
 import {HttpClient} from '@angular/common/http';
 import {HttpErrorResponse} from '@angular/common/http';
+import { FormGroup, FormControl, Validators, FormBuilder, FormArray } from '@angular/forms';
+import {FormsModule, ReactiveFormsModule} from '@angular/forms';
 
 @Component({
   selector: 'app-contact',
@@ -9,35 +11,23 @@ import {HttpErrorResponse} from '@angular/common/http';
   styleUrls: ['./contact.component.scss']
 })
 export class ContactComponent {
+  successMessage: string;
+  contactForm = this.fb.group({
+    name: ['', Validators.required],
+    email: [''],
+    mobileNum: [''],
+    subject: [''],
+    message: [''],
+    aliases: this.fb.array([
+      this.fb.control('')
+    ])
+  });
 
-  powers = ['Really Smart', 'Super Flexible',
-            'Super Hot', 'Weather Changer'];
-model = new Hero(18, 'Dr IQ', this.powers[0], 'Chuck Overstreet');
-public data: any = [];
-  submitted = false;
-  save(name, email, mobile, subject, message): void {
-    this.data['name'] = name;
-    this.data['email'] = email;
-    this.data['mobile'] = mobile;
-    this.data['subject'] = subject;
-    this.data['message'] = message;
-    this.http.put<any>('http://localhost/api/v1/update/', this.data).subscribe(
-res => {
-console.log(res);
-},
-(err: HttpErrorResponse) => {
-if (err.error instanceof Error) {
-console.log("Client-side error occured.");
-} else {
-console.log("Server-side error occurred.");
-}
-});
-}
-constructor(private http: HttpClient) { }
-  onSubmit() { this.submitted = true; }
-
-  newHero() {
-    this.model = new Hero(42, '', '');
+  constructor(private fb: FormBuilder) { }
+  onSubmit() {
+    // TODO: Use EventEmitter with form value
+    window.scrollTo(0, 0);
+    this.successMessage = "The form has been submitted successfully and our representive will get in touch with you.";
   }
-
 }
+

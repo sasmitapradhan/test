@@ -1,6 +1,8 @@
 import { Component, OnInit, Input, Output, EventEmitter } from '@angular/core';
 import {HttpClient} from '@angular/common/http';
 import {HttpErrorResponse} from '@angular/common/http';
+import { FormGroup, FormControl, Validators, FormBuilder, FormArray } from '@angular/forms';
+import {FormsModule, ReactiveFormsModule} from '@angular/forms';
 
 
 @Component({
@@ -9,28 +11,24 @@ import {HttpErrorResponse} from '@angular/common/http';
   styleUrls: ['./feedback.component.scss']
 })
 export class FeedbackComponent {
-  public data: any = [];
+  successMessage: string;
+  feedbackForm = this.fb.group({
+    text: ['', Validators.required],
+    rating: ['']
+  });
+
   // tslint:disable-next-line:no-output-on-prefix
   @Output() onRating = new EventEmitter<Number>();
-  constructor(private http: HttpClient) { }
+  counter = 0;
+  constructor(private fb: FormBuilder) { }
 
-  save(name, email, mobile, subject, message): void {
-                this.data['name'] = name;
-                this.data['email'] = email;
-                this.data['mobile'] = mobile;
-                this.data['subject'] = subject;
-                this.data['message'] = message;
-                this.http.put<any>('http://localhost/api/v1/update/', this.data).subscribe(
-        res => {
-          console.log(res);
-      },
-      (err: HttpErrorResponse) => {
-        if (err.error instanceof Error) {
-          console.log("Client-side error occured.");
-        } else {
-          console.log("Server-side error occurred.");
-        }
-      });
-   }
-
+  onSubmit() {
+    // TODO: Use EventEmitter with form value
+    window.scrollTo(0, 0);
+    this.successMessage = "The form has been submitted successfully and our representive will get in touch with you.";
+  }
+  valueChanged() {
+    this.counter = this.counter + 1;
+    this.onRating.emit(this.counter);
+  }
 }

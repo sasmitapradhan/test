@@ -148,7 +148,7 @@ p:last-child {
   color: #41a873;
     background: #FFF;
     padding: 12px 17px;
-    font-family: 'raleway';
+    font-family: 'Open Sans';
     border: 2px solid #41a873;
     font-size: 13px;
     font-weight: bold;
@@ -3938,6 +3938,9 @@ p:last-child {
 .star.medium, .rating.medium .star {
   width:30px !important;
   height: 30px !important;
+}
+.button_sliding_bg[disabled] {
+  opacity: 0.5;
 }
 /* End Footer area css
 ============================================================================================ */

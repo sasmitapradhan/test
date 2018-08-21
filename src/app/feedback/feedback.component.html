@@ -1,26 +1,29 @@
-<div style="text-align:center">
+<div style="text-align:center" class="feedback-form">
   <h1 class="well">
     Send Us Your Feedback!!
   </h1>
 	<div class="container">
+			<div class="alert alert-success" *ngIf="successMessage">
+					<strong>Success!</strong> {{successMessage}}
+			</div>
 	<div class="col-md-6">
    <img src="../../assets/img/FEEDBACK.png">
 	</div>
 	<div class="col-md-6">
 			<div class="form-area"> 
-				<form role="form">
+				<form [formGroup]="feedbackForm" (ngSubmit)= "onSubmit()">
 					<br style="clear:both">
 					<h3 style="margin-bottom: 25px; text-align: center;">Your opinion is importance to us. This way we can keep improving our website</h3>
 					<div class="form-group">
 								<label>Your overall satisfaction of this page</label> <br>
-								<star-rating [starType]="'svg'" [rating]="2.63"></star-rating>
+								<star-rating [starType]="'svg'" [rating]="2.63" (click)="valueChanged()"></star-rating>
 					</div>
 				
 					<div class="form-group">
 						<label>Would You like to add a comment</label>
-									<textarea class="form-control" type="textarea" id="message" name="message" placeholder=""   maxlength="140" rows="7"></textarea>              
+									<textarea class="form-control" type="textarea"  placeholder=""  formControlName="text"  maxlength="140" rows="7" required></textarea>              
 					</div>
-					<button type="button" id="submit" name="submit" class="button_sliding_bg" (click)="save('','','','','')">Submit</button>
+					<button type="submit"  class="button_sliding_bg" [disabled]="!feedbackForm.valid">Submit</button>
 				</form>
 			</div>
 		</div>
