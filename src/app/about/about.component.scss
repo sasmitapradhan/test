@@ -1,16 +1,19 @@
 #about {
-    background: url(../../assets/img/texturas.jpg) no-repeat;
+   background-color: #d4dda7;
     background-size: cover;
+    p {
+        font-size: 17px;
+    }
 }
 
-.about-section {
-    
+.about-section {   
     .title {
         position: absolute;
         text-align: center;
         left:40%;
         z-index: 1;
         padding-bottom: 30px;
+        font-weight: 600;
     }
     .about-content {
         padding:40px;
@@ -19,7 +22,16 @@
             img {
                 display: block;
                 max-width: 100%;
-                height: auto;
+               
+                width: 554px;
+    height: 463px;
+    margin-top: -30px;
+               
+            }
+        }
+        .about-text {
+            p:last-child {
+                text-align: left !important;
             }
         }
     }
@@ -47,6 +59,7 @@
             .about-image {
                 padding-bottom: 50px;
                 padding-top:100px;
+                height:100% !important;
             }
         }
     }

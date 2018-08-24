@@ -1,5 +1,8 @@
 #contact {
     border-bottom: 1px solid #d2e0df;
+    h1 {
+        font-weight: 600;
+    }
     .bottom80 {
         padding-bottom: 60px;
     }
@@ -7,12 +10,14 @@
         padding-top:65px;
     }
 }
- .ng-valid[required], .ng-valid.required  {
-    border-left: 5px solid #42A948; /* green */
-   }
-  
-  .ng-invalid:not(form):not(.ng-dirty)  {     border-left: 5px solid #a94442; /* red */
-  }
+.custom-select.is-invalid, .form-control.is-invalid, .was-validated .custom-select:invalid, .was-validated .form-control:invalid {
+    border-color: #dc3545;
+}
+.invalid-feedback {
+    width: 100%;
+    margin-top: .25rem;
+    color: #dc3545;
+}
   @media(max-width:992px) {
       #contact {
         .contact-address {

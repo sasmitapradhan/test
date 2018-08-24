@@ -2,8 +2,9 @@ import { NgModule } from '@angular/core';
 import { BrowserModule, Title } from '@angular/platform-browser';
 import { Routes, RouterModule} from '@angular/router';
 import { StarRatingModule } from 'angular-star-rating';
-import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+import { ReactiveFormsModule } from '@angular/forms';
 import { HttpClientModule } from '@angular/common/http';
+import { InMemoryDataService } from './in-memory-data.service';
 import { AppComponent } from './app.component';
 import { HeaderComponent } from './header/header.component';
 import { MainSliderAreaComponent } from './main-slider-area/main-slider-area.component';
@@ -56,9 +57,7 @@ const appRoutes: Routes = [
     RouterModule.forRoot(
       appRoutes),
     AppRoutingModule,
-    FormsModule,
    HttpClientModule,
-   FormsModule,
   ReactiveFormsModule
   ],
   providers: [

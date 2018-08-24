@@ -1,7 +1,7 @@
 <div style="text-align:center" class="feedback-form">
-  <h1 class="well">
+  <h2 class="well">
     Send Us Your Feedback!!
-  </h1>
+  </h2>
 	<div class="container">
 			<div class="alert alert-success" *ngIf="successMessage">
 					<strong>Success!</strong> {{successMessage}}
@@ -11,19 +11,24 @@
 	</div>
 	<div class="col-md-6">
 			<div class="form-area"> 
-				<form [formGroup]="feedbackForm" (ngSubmit)= "onSubmit()">
+				<form [formGroup]="feedbackForm" (ngSubmit)= "onSubmit(feedbackForm.value)">
 					<br style="clear:both">
-					<h3 style="margin-bottom: 25px; text-align: center;">Your opinion is importance to us. This way we can keep improving our website</h3>
+					<h4 style="margin-bottom: 25px; text-align: center;">Your opinion is importance to us. This way we can keep improving ourselves</h4>
 					<div class="form-group">
 								<label>Your overall satisfaction of this page</label> <br>
 								<star-rating [starType]="'svg'" [rating]="2.63" (click)="valueChanged()"></star-rating>
 					</div>
-				
+					<div class="form-group">
+						<label>Email</label>
+						<input type="email"  class="form-control" placeholder=""  formControlName="email"/>              
+					</div>
 					<div class="form-group">
 						<label>Would You like to add a comment</label>
 									<textarea class="form-control" type="textarea"  placeholder=""  formControlName="text"  maxlength="140" rows="7" required></textarea>              
 					</div>
-					<button type="submit"  class="button_sliding_bg" [disabled]="!feedbackForm.valid">Submit</button>
+				
+					
+					<button type="submit"  class="btn btn-primary" [disabled]="!feedbackForm.valid">Submit</button>
 				</form>
 			</div>
 		</div>

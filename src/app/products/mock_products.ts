@@ -39,7 +39,7 @@ export const products: Product[] = [
         "imageUrl": "../../assets/img/product_img.png",
         "technicalDetails": [
             {
-               capacity: "67 kgs",
+               capacity: "75 kgs",
                dimension: "L 9.0 x W 2.5 x H 4.3 ft",
                operation: "FULLY AUTOMATIC",
                controlSystem: "PLC",
@@ -65,7 +65,7 @@ export const products: Product[] = [
         "imageUrl": "../../assets/img/product_img.png",
         "technicalDetails": [
             {
-               capacity: "50 kgs",
+               capacity: "100 kgs",
                dimension: "L 6.0 x W 2.5 x H 4.3 ft",
                operation: "FULLY AUTOMATIC",
                controlSystem: "PLC",
@@ -90,7 +90,7 @@ export const products: Product[] = [
         "imageUrl": "../../assets/img/product_img.png",
         "technicalDetails": [
             {
-               capacity: "100 kgs",
+               capacity: "150 kgs",
                dimension: "L 6.0 x W 2.5 x H 4.3 ft",
                operation: "FULLY AUTOMATIC",
                controlSystem: "PLC",
@@ -115,7 +115,7 @@ export const products: Product[] = [
         "imageUrl": "../../assets/img/product_img.png",
         "technicalDetails": [
             {
-               capacity: "67 kgs",
+               capacity: "200 kgs",
                dimension: "L 6.0 x W 2.5 x H 4.3 ft",
                operation: "FULLY AUTOMATIC",
                controlSystem: "PLC",
@@ -140,7 +140,7 @@ export const products: Product[] = [
         "imageUrl": "../../assets/img/product_img.png",
         "technicalDetails": [
             {
-               capacity: "55 kgs",
+               capacity: "250 kgs",
                dimension: "L 6.0 x W 2.5 x H 4.3 ft",
                operation: "FULLY AUTOMATIC",
                controlSystem: "PLC",
@@ -165,7 +165,7 @@ export const products: Product[] = [
         "imageUrl": "../../assets/img/product_img.png",
         "technicalDetails": [
             {
-               capacity: "59 kgs",
+               capacity: "300 kgs",
                dimension: "L 6.0 x W 2.5 x H 4.3 ft",
                operation: "FULLY AUTOMATIC",
                controlSystem: "PLC",
@@ -190,7 +190,7 @@ export const products: Product[] = [
         "imageUrl": "../../assets/img/product_img.png",
         "technicalDetails": [
             {
-               capacity: "39 kgs",
+               capacity: "350 kgs",
                dimension: "L 6.0 x W 2.5 x H 4.3 ft",
                operation: "FULLY AUTOMATIC",
                controlSystem: "PLC",
@@ -215,7 +215,7 @@ export const products: Product[] = [
         "imageUrl": "../../assets/img/product_img.png",
         "technicalDetails": [
             {
-               capacity: "55 kgs",
+               capacity: "450 kgs",
                dimension: "L 6.0 x W 2.5 x H 4.3 ft",
                operation: "FULLY AUTOMATIC",
                controlSystem: "PLC",
@@ -240,7 +240,7 @@ export const products: Product[] = [
         "imageUrl": "../../assets/img/product_img.png",
         "technicalDetails": [
             {
-               capacity: "52 kgs",
+               capacity: "550 kgs",
                dimension: "L 6.0 x W 2.5 x H 4.3 ft",
                operation: "FULLY AUTOMATIC",
                controlSystem: "PLC",
@@ -265,7 +265,7 @@ export const products: Product[] = [
         "imageUrl": "../../assets/img/product_img.png",
         "technicalDetails": [
             {
-               capacity: "51 kgs",
+               capacity: "650 kgs",
                dimension: "L 6.0 x W 2.5 x H 4.3 ft",
                operation: "FULLY AUTOMATIC",
                controlSystem: "PLC",

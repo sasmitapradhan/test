@@ -1,13 +1,15 @@
 #oper-principle {
+    
     h2 {
         padding-top:30px;
         padding-bottom: 15px;
-        font-weight: bold;
+        font-weight: 600;
+       
     }
     
     .container-fluid {
         // background: url(../../assets/img/texturas.jpg) no-repeat;
-        background-color: #b2c590;
+        background-color: #d4dda7;
         background-size: cover;
         height: auto;
         max-width: 100%;
@@ -21,7 +23,8 @@
             font-weight: bold;
         }
         p {
-            font-size: 1.2em;
+            font-family: sans-serif;
+            font-size: 17px;
             text-align: justify;
             padding-bottom: 30px;
         }
