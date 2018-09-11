@@ -1,0 +1,57 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>GreenHance</title>
+  <base href="https://sasmitapradhan.github.io/test/index.html">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="icon"  href="title.ico" type="image/x-icon"> 
+<link rel="stylesheet" href="styles.1736ab349721adb60135.css"></head>
+<body class="overlay-wrapped">
+    <div class="mist-overlay"></div>
+  <app-root><Loading class=""></Loading>    
+  </app-root>
+<script type="text/javascript" src="runtime.a66f828dca56eeb90e02.js"></script><script type="text/javascript" src="polyfills.e3633a42d1123afc5fc9.js"></script><script type="text/javascript" src="scripts.44b928e8fa0a1a3dd8c0.js"></script><script type="text/javascript" src="main.dff15967570d9e15ef55.js"></script></body>
+</html>
+<script type="text/javascript">
+  $(document).ready(function () {
+      // mobile menu slide from the left
+      $('[data-toggle="slide-collapse"]').on('click', function () {
+          // show the sidebar
+          $('#sidebar').addClass('active');
+          // fade in the overlay
+          $('.overlay').fadeIn();
+
+      });
+      $('.overlay,.mobile-nav-close,.close-nav').on('click', function () {
+          // hide the sidebar
+          $('#sidebar').removeClass('active');
+          // fade out the overlay
+          $('.overlay').fadeOut();
+      });
+     
+   
+  });
+  function myaffix() {
+
+var affixoffset = $('.navbar').offset().top
+
+$('#bs-example-navbar-collapse-1').height($(".navbar").height());
+
+$(window).scroll(function () {
+console.log(affixoffset);
+console.log($(window).scrollTop());
+    if ($(window).scrollTop() <= affixoffset) {
+        $('.main_menu_area').removeClass('affix');
+    } else {
+        $('.main_menu_area').addClass('affix');
+    }
+});
+
+};
+myaffix();
+
+$(window).on("resize", function () {
+    myaffix();
+});
+</script>
